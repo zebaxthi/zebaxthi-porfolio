@@ -1,0 +1,45 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCIES = [
+  {
+    date: "22/11/2024 - Actualmente",
+    title: "Analista de desarrollo",
+    description:
+      "The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.",
+    direction: "left",
+  },
+  {
+    date: "22/11/2024 - Actualmente",
+    title: "Analista de desarrollo",
+    description:
+      "The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.",
+    direction: "right",
+  },
+  {
+    date: "22/11/2024 - Actualmente",
+    title: "Analista de desarrollo",
+    description:
+      "The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.",
+    direction: "left",
+  },
+  {
+    date: "22/11/2024 - Actualmente",
+    title: "Analista de desarrollo",
+    description:
+      "The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh personal computer. It played a pivotal role establishing desktop publishing as a general office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed in a beige case with integrated carrying handle; it came with a keyboard and single-button mouse.",
+    direction: "right",
+  },
+];
+---
+
+<ul
+  class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical"
+>
+  {
+    EXPERIENCIES.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ul>
